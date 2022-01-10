@@ -1,13 +1,105 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+:root{
+  /* Primary */
+
+--ModerateBlue: hsl(238, 40%, 52%);
+--SoftRed: hsl(358, 79%, 66%);
+--LightGrayishBlue: hsl(239, 57%, 85%);
+--PaleRed: hsl(357, 100%, 86%);
+
+/* Neutral */
+
+--DarkBlue: hsl(212, 24%, 26%);
+--GrayishBlue: hsl(211, 10%, 45%);
+--LightGray: hsl(223, 19%, 93%);
+--VeryLightGray: hsl(228, 33%, 97%);
+--White: hsl(0, 0%, 100%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  /* 400,500,700 */
+  font-family: 'Rubik', sans-serif;
 }
+
+/********MAIN********************/
+.main{
+  background-color: var(--LightGray);
+}
+
+
+
+/***************CARD***************/
+.card{
+  background-color: var(--White);
+}
+
+.btn_plus_minus{
+  background-color: var(--LightGray);
+}
+
+.card__score{
+  background-color: var(--LightGray);
+  color:var(--ModerateBlue);
+  font-weight: 700;
+}
+
+.card__username{
+  color: var(--DarkBlue);
+  font-weight: 700;
+}
+
+.card_createdAt{
+  color: var(--GrayishBlue);
+}
+
+.card__reply{
+  color:var(--ModerateBlue);
+  font-weight: 700;
+}
+
+.card__content{
+  color:var(--GrayishBlue);
+ 
+}
+
+
+
+
+
+
+
+
+/***************REPLY***************/
+.card__replyto{
+  color:var(--ModerateBlue);
+  font-weight: 700;
+}
+
+.reply__border{
+  border-color: var(--LightGrayishBlue);
+}
+
+
+
+/***************TEXTAREA***************/
+.newcomment__textarea{
+  outline-color: var(--GrayishBlue);
+ border:1px solid var(--LightGray);
+}
+.newcomment__button{
+  color: var(--White);
+  font-weight: 500;
+  background-color: var(--ModerateBlue);
+}
+
+.newcomment__delete{
+  color: var(--SoftRed);
+  font-weight: 700;
+}
+
+
