@@ -29,7 +29,7 @@ type HandleInputChange = ChangeEvent<HTMLTextAreaElement>
 export default function Reply({reply, currentUser, PlusScoreReply, MinusScoreReply,comment, comments, setComments, timeSince}:Props) {
 
     const initialStateContent={
-        content:comment.content
+        content:reply.content
     };
     
     const [showReplyForm, setShowReplyForm] = useState(false);
